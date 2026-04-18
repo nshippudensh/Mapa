@@ -155,7 +155,7 @@ int kv_put(kv_t *table, char *key, char *value) {
         returns: 0 on success, -1 on failure
         
 */
-int kv_free(kv_t *table) {
+void kv_free(kv_t *table) {
     if(!table)
         return -1;
 
