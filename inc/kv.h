@@ -3,6 +3,7 @@
 
 #include <stdlib.h>
 
+#define TOMBSTONE 0x1
 
 typedef struct {
     char *key;

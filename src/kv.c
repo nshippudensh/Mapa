@@ -1,7 +1,6 @@
 #include <kv.h>
 #include <string.h>
 
-#define TOMBSTONE 0x1
 
 kv_t *kv_init(size_t capacity) {
     if(capacity == 0) 
