@@ -5,8 +5,8 @@ int main() {
     kv_t *db = kv_init(16);
 
     printf("%p\n", db);
-    printf("%lld\n", db->capacity);
-
+    printf("%lu\n", db->capacity);
+    
     kv_put(db, "foo", "far");
     kv_put(db, "boo", "bar");
     kv_put(db, "doo", "dar");
