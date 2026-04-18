@@ -7,9 +7,12 @@ int main() {
     printf("%p\n", db);
     printf("%lu\n", db->capacity);
     
-    kv_put(db, "foo", "far");
-    kv_put(db, "boo", "bar");
-    kv_put(db, "doo", "dar");
+    int first = kv_put(db, "color", "blue");
+    printf("First insertion: %d\n", first);
+    int second = kv_put(db, "boo", "bar");
+    printf("Second insertion: %d\n", second);
+    int third = kv_put(db, "doo", "dar");
+    printf("Third insertion: %d\n", third);
     kv_put(db, "doo", "dsfhakljsdhfkljadsh");
 
     for(int i = 0; i < db->capacity; i++) {

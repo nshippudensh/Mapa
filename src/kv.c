@@ -122,7 +122,7 @@ int kv_put(kv_t *table, char *key, char *value) {
             }    
             free(entry->value);
             entry->value = newval;
-            return real_index;
+            return 0;//real_index;
         }
 
         // land in a slot that is "empty"
@@ -140,7 +140,7 @@ int kv_put(kv_t *table, char *key, char *value) {
             entry->value = newval;
             table->count++;
 
-            return real_index;
+            return 0;//real_index;
         }
 
     }
